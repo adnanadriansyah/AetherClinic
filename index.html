@@ -1,439 +1,451 @@
 ﻿<!DOCTYPE html>
-
-<html class="light" lang="id"><head>
+<html class="light" lang="id">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>AetherClinic | Precision meets Compassion</title>
 <link rel="stylesheet" href="./output.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
 </head>
 <body class="font-body-md text-on-background bg-background overflow-x-hidden" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwvW4lnrXFQaD4rgG37mrN-uP-Xcuzjyz8G4FYqVjj85118ZjBcFPlWQr6CHHQ7IajRsp0ygLf1eN3OTqF0863qPR7lhZGePI9mwlPiUBM7Hqr71ButGgcbIutMJWypAFUq9wZxWRE3xro4ZIIoN7pz3svIO8HVKgjIcRjUBOVvjZaug0l3xTo5s859_R4adXGSqkCC-0rzimndiJTilnKyj4dIMuxv_jkJXFt4Gweg2UYdbsQTkpgR3ibPsqHi84JKF_6WVw17VY'); background-attachment: fixed; background-size: cover; background-position: center; background-repeat: no-repeat;">
+
 <!-- Scroll Progress Bar -->
 <div class="scroll-progress" id="scroll-progress"></div>
 
 <!-- Top Navigation Bar -->
 <header class="fixed top-0 left-0 right-0 z-50 flex justify-center w-full px-4 sm:px-6">
-<nav class="bg-white/70 backdrop-blur-xl border border-white/30 shadow-xl shadow-primary/5 rounded-full mt-4 mx-auto max-w-fit px-6 sm:px-8 py-2.5 flex items-center gap-6 sm:gap-8 transition-all duration-500" id="main-nav">
-<a href="index.html" class="text-headline-sm font-headline-sm tracking-tight text-on-surface flex items-center gap-2 shrink-0">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">fluid_med</span>
-            AetherClinic
-        </a>
-<div class="hidden md:flex items-center gap-1 font-body-md text-body-md">
-<a href="index.html" class="px-3 py-1.5 rounded-full text-primary font-semibold transition-all duration-300" id="nav-home">Home</a>
-<a href="services.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">Services</a>
-<a href="specialists.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">Specialists</a>
-<a href="tentangkami.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">About Us</a>
-<a href="technologies.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">Technologies</a>
-</div>
-<button class="clay-button ripple-btn px-5 py-2 rounded-full text-white font-label-md text-label-md hover:scale-105 active:scale-95 transition-all duration-300">
-        Book Appointment
+  <nav class="bg-white/70 backdrop-blur-xl border border-white/30 shadow-xl shadow-primary/5 rounded-full mt-4 mx-auto max-w-fit px-6 sm:px-8 py-2.5 flex items-center gap-6 sm:gap-8 transition-all duration-500" id="main-nav">
+    <a href="index.html" class="text-headline-sm font-headline-sm tracking-tight text-on-surface flex items-center gap-2 shrink-0">
+      <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">fluid_med</span>
+      AetherClinic
+    </a>
+    <div class="hidden md:flex items-center gap-1 font-body-md text-body-md">
+      <a href="index.html" class="px-3 py-1.5 rounded-full text-primary font-semibold transition-all duration-300" id="nav-home">Home</a>
+      <a href="services.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">Services</a>
+      <a href="specialists.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">Specialists</a>
+      <a href="tentangkami.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">About Us</a>
+      <a href="technologies.html" class="px-3 py-1.5 rounded-full text-on-surface-variant/80 hover:text-primary hover:bg-primary/5 transition-all duration-300">Technologies</a>
+    </div>
+    <button class="clay-button ripple-btn px-5 py-2 rounded-full text-white font-label-md text-label-md hover:scale-105 active:scale-95 transition-all duration-300">
+      Book Appointment
     </button>
-</nav>
+  </nav>
 </header>
+
 <!-- Hero Section -->
 <section class="relative pt-40 pb-20 px-container-padding max-w-max-width mx-auto flex flex-col md:flex-row items-center gap-12 overflow-hidden">
-<div class="particles-container" id="hero-particles"></div>
-<div class="flex-1 text-center md:text-left z-10">
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg gradient-text mb-6 leading-tight">
-                Kesehatan Anda,<br/>Prioritas Kami
-            </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto md:mx-0">
-                Menghadirkan perawatan medis tercanggih dengan pendekatan personal yang mengutamakan kenyamanan dan presisi melalui teknologi Aether terkini.
-            </p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-<button class="clay-button px-8 py-4 rounded-full text-white font-bold text-lg flex items-center justify-center gap-2">
-<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
-                    Buat Janji
-                </button>
-<button class="px-8 py-4 rounded-full border-2 border-primary-fixed-dim text-primary font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary-fixed-dim/10 transition-all">
-                    Lihat Layanan
-                </button>
-</div>
-</div>
-<div class="flex-1 relative">
-<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-<div class="relative clay-card p-4 aspect-square flex items-center justify-center">
-<img alt="Medical Future" class="w-full h-full object-cover rounded-[1.5rem]" data-alt="A futuristic medical-themed 3D render of a glowing blue stethoscope floating in a minimalist clinical space. The lighting is soft and volumetric, reflecting the clinical futurism aesthetic with a focus on tactile glass and clay textures. The background is a clean white and light blue gradient with depth and soft atmospheric perspective." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN1yHAw8CP6UjXYp7dKwS_HVTCS_3qwNRP3SM3bAb8tlxgGqagU1_L1-VzigLz145KpFy6R-KmmN5PTEcESraIFrE9_hr7ti8hq44Ph-42493qGlDyl3lmTZaufHuzuuExE9ebVd64m5ZNHhAhC154yRnmXu7mYk7nlHzxfATo6EN77RfHgM9iu5LLAGoUchQx288jOBX0QYxk3NVThK6YDZpfa5T1gey7-t2Gpn12CiDsYj80zYSBFhO-LG3wgZVwz9sbV1a65JQ"/>
-<div class="absolute -bottom-6 -left-6 bg-white/80 backdrop-blur-md p-6 rounded-3xl shadow-xl border border-white/50 animate-bounce transition-all duration-700">
-<span class="material-symbols-outlined text-secondary text-4xl" data-icon="vital_signs" data-weight="fill">vital_signs</span>
-<p class="font-bold text-primary mt-2">Live Monitor Active</p>
-</div>
-</div>
-</div>
+  <div class="particles-container" id="hero-particles"></div>
+  <div class="flex-1 text-center md:text-left z-10">
+    <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg gradient-text mb-6 leading-tight">
+      Kesehatan Anda,<br/>Prioritas Kami
+    </h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-xl mx-auto md:mx-0">
+      Menghadirkan perawatan medis tercanggih dengan pendekatan personal yang mengutamakan kenyamanan dan presisi melalui teknologi Aether terkini.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+      <button class="clay-button px-8 py-4 rounded-full text-white font-bold text-lg flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+        Buat Janji
+      </button>
+      <button class="px-8 py-4 rounded-full border-2 border-primary-fixed-dim text-primary font-bold text-lg flex items-center justify-center gap-2 hover:bg-primary-fixed-dim/10 transition-all">
+        Lihat Layanan
+      </button>
+    </div>
+  </div>
+
+  <!-- Hero Image + Badge -->
+  <div class="flex-1 relative">
+    <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
+
+    <!-- Wrapper: card + badge floating di luar -->
+    <div class="relative" style="overflow: visible;">
+
+      <!-- Clay Card gambar (ganti src untuk custom image) -->
+      <div class="relative clay-card p-4 aspect-square flex items-center justify-center" style="overflow: visible;">
+        <img
+          alt="Dr. Sarah Amalia – Dokter Spesialis Pediatrik"
+          class="w-full h-full object-cover rounded-[1.5rem]"
+          src="src/images/hero-doctor.jpg"
+        />
+      </div>
+
+      <!-- Badge FLOATING DI LUAR card -->
+      <div class="absolute -bottom-6 -left-6 bg-white/80 backdrop-blur-md p-6 rounded-3xl shadow-xl border border-white/50 animate-bounce transition-all duration-700" style="z-index: 20;">
+        <span class="material-symbols-outlined text-secondary text-4xl" data-icon="vital_signs" data-weight="fill">vital_signs</span>
+        <p class="font-bold text-primary mt-2">Live Monitor Active</p>
+      </div>
+
+    </div>
+  </div>
 </section>
+
 <!-- Statistics Section -->
 <section class="py-section-gap px-container-padding max-w-max-width mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="clay-card p-10 text-center flex flex-col items-center">
-<div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary text-4xl" data-icon="groups">groups</span>
-</div>
-<h3 class="font-display-lg text-4xl text-primary mb-2"><span class="counter-value" data-target="15">0</span><span class="counter-suffix">K+</span></h3>
-<p class="font-label-md text-on-surface-variant">Pasien Puas</p>
-</div>
-<div class="clay-card p-10 text-center flex flex-col items-center">
-<div class="w-16 h-16 rounded-2xl bg-primary-container/20 flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-primary text-4xl" data-icon="medical_services">medical_services</span>
-</div>
-<h3 class="font-display-lg text-4xl text-primary mb-2"><span class="counter-value" data-target="50">0</span><span class="counter-suffix">+</span></h3>
-<p class="font-label-md text-on-surface-variant">Dokter Ahli</p>
-</div>
-<div class="clay-card p-10 text-center flex flex-col items-center">
-<div class="w-16 h-16 rounded-2xl bg-tertiary-container/10 flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="emergency">emergency</span>
-</div>
-<h3 class="font-display-lg text-4xl text-primary mb-2">24/7</h3>
-<p class="font-label-md text-on-surface-variant">Layanan Darurat</p>
-</div>
-</div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="clay-card p-10 text-center flex flex-col items-center">
+      <div class="w-16 h-16 rounded-2xl bg-secondary-container/20 flex items-center justify-center mb-6">
+        <span class="material-symbols-outlined text-secondary text-4xl" data-icon="groups">groups</span>
+      </div>
+      <h3 class="font-display-lg text-4xl text-primary mb-2"><span class="counter-value" data-target="15">0</span><span class="counter-suffix">K+</span></h3>
+      <p class="font-label-md text-on-surface-variant">Pasien Puas</p>
+    </div>
+    <div class="clay-card p-10 text-center flex flex-col items-center">
+      <div class="w-16 h-16 rounded-2xl bg-primary-container/20 flex items-center justify-center mb-6">
+        <span class="material-symbols-outlined text-primary text-4xl" data-icon="medical_services">medical_services</span>
+      </div>
+      <h3 class="font-display-lg text-4xl text-primary mb-2"><span class="counter-value" data-target="50">0</span><span class="counter-suffix">+</span></h3>
+      <p class="font-label-md text-on-surface-variant">Dokter Ahli</p>
+    </div>
+    <div class="clay-card p-10 text-center flex flex-col items-center">
+      <div class="w-16 h-16 rounded-2xl bg-tertiary-container/10 flex items-center justify-center mb-6">
+        <span class="material-symbols-outlined text-tertiary text-4xl" data-icon="emergency">emergency</span>
+      </div>
+      <h3 class="font-display-lg text-4xl text-primary mb-2">24/7</h3>
+      <p class="font-label-md text-on-surface-variant">Layanan Darurat</p>
+    </div>
+  </div>
 </section>
+
 <!-- Services Grid -->
 <section class="py-section-gap px-container-padding max-w-max-width mx-auto bg-surface-container-low rounded-[4rem]">
-<div class="text-center mb-16">
-<h2 class="font-headline-md text-headline-md text-primary mb-4">Layanan Spesialis Kami</h2>
-<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Pelayanan kesehatan komprehensif didukung oleh teknologi diagnosis terkini dan tim ahli berpengalaman.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Cardiology -->
-<div class="clay-card shimmer-card p-8 group">
-<div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="cardiology">cardiology</span>
-</div>
-<h4 class="font-headline-sm text-headline-sm text-primary mb-3">Kardiologi</h4>
-<p class="font-body-md text-on-surface-variant mb-6">Diagnosis dan perawatan jantung tingkat lanjut untuk kesehatan kardiovaskular optimal.</p>
-<a class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
-                    Selengkapnya <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<!-- Neurology -->
-<div class="clay-card shimmer-card p-8 group">
-<div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="neurology">neurology</span>
-</div>
-<h4 class="font-headline-sm text-headline-sm text-primary mb-3">Neurologi</h4>
-<p class="font-body-md text-on-surface-variant mb-6">Penanganan komprehensif untuk saraf dan otak dengan teknologi pemindaian mutakhir.</p>
-<a class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
-                    Selengkapnya <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<!-- General Checkup -->
-<div class="clay-card shimmer-card p-8 group">
-<div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="stethoscope">stethoscope</span>
-</div>
-<h4 class="font-headline-sm text-headline-sm text-primary mb-3">General Checkup</h4>
-<p class="font-body-md text-on-surface-variant mb-6">Pemeriksaan rutin berkala untuk memastikan tubuh Anda tetap dalam kondisi prima.</p>
-<a class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
-                    Selengkapnya <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</div>
+  <div class="text-center mb-16">
+    <h2 class="font-headline-md text-headline-md text-primary mb-4">Layanan Spesialis Kami</h2>
+    <p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Pelayanan kesehatan komprehensif didukung oleh teknologi diagnosis terkini dan tim ahli berpengalaman.</p>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="clay-card shimmer-card p-8 group">
+      <div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-primary text-3xl" data-icon="cardiology">cardiology</span>
+      </div>
+      <h4 class="font-headline-sm text-headline-sm text-primary mb-3">Kardiologi</h4>
+      <p class="font-body-md text-on-surface-variant mb-6">Diagnosis dan perawatan jantung tingkat lanjut untuk kesehatan kardiovaskular optimal.</p>
+      <a class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
+        Selengkapnya <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+      </a>
+    </div>
+    <div class="clay-card shimmer-card p-8 group">
+      <div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-primary text-3xl" data-icon="neurology">neurology</span>
+      </div>
+      <h4 class="font-headline-sm text-headline-sm text-primary mb-3">Neurologi</h4>
+      <p class="font-body-md text-on-surface-variant mb-6">Penanganan komprehensif untuk saraf dan otak dengan teknologi pemindaian mutakhir.</p>
+      <a class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
+        Selengkapnya <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+      </a>
+    </div>
+    <div class="clay-card shimmer-card p-8 group">
+      <div class="w-14 h-14 bg-primary/5 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <span class="material-symbols-outlined text-primary text-3xl" data-icon="stethoscope">stethoscope</span>
+      </div>
+      <h4 class="font-headline-sm text-headline-sm text-primary mb-3">General Checkup</h4>
+      <p class="font-body-md text-on-surface-variant mb-6">Pemeriksaan rutin berkala untuk memastikan tubuh Anda tetap dalam kondisi prima.</p>
+      <a class="text-primary font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform" href="#">
+        Selengkapnya <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+      </a>
+    </div>
+  </div>
 </section>
+
 <!-- Specialists Section -->
 <section class="py-section-gap px-container-padding max-w-max-width mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-<div class="max-w-2xl">
-<h2 class="font-headline-md text-headline-md text-primary mb-4">Tim Dokter Ahli</h2>
-<p class="font-body-md text-on-surface-variant">Dokter-dokter kami adalah pionir di bidangnya dengan pengalaman bertahun-tahun dalam pelayanan klinis futuristik.</p>
-</div>
-<button class="flex items-center gap-2 text-primary font-bold px-6 py-3 bg-primary/5 rounded-full hover:bg-primary/10 transition-all">
-                Lihat Semua <span class="material-symbols-outlined" data-icon="north_east">north_east</span>
-</button>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<!-- Doctor 1 -->
-<div class="clay-card shimmer-card group">
-<div class="aspect-[4/5] overflow-hidden">
-<img alt="Dr. Aris" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional portrait of a male doctor in a crisp white clinical lab coat, smiling confidently in a futuristic medical facility. The background features soft blue glowing panels and high-tech glass surfaces. The lighting is high-key and bright, evoking a professional and trustworthy clinical futurism atmosphere with soft blue tinted shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoatYnjd-AxJXgXJOGl2pyajd-Agq9s9DkmlOH5A0Ut5-cinTg4TwwqK-KjK5gGzNx8b-kPQR8tU2FxJCJ_R0InVoOu3WLwYo2gGLH0WYFf02oi7Ah4KZMTx88f5ctlbpNL0e9efNXKCysOjCmKp8ns8_eWymuLodLFsZ8fSa2cb8H0xc5f1aev8GwuZbPiWAc_ES4eWhImSQt9KM8ExCvBEmnjgbdBM_5hTr-GipOeyJtSjVBd7ZPgs2JjvIUX5j6mP5NTuZgtjk"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-sm mb-1 uppercase">Kardiologis Utama</p>
-<h5 class="font-headline-sm text-lg text-primary">Dr. Aris Sudarsono</h5>
-</div>
-</div>
-<!-- Doctor 2 -->
-<div class="clay-card shimmer-card group">
-<div class="aspect-[4/5] overflow-hidden">
-<img alt="Dr. Maya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional portrait of a female neurologist in a white coat, looking intelligent and empathetic. She is standing in a modern clinic with glass walls and abstract 3D medical icons in the background. The aesthetic is clean, medical, and high-tech with a palette of whites, light greys, and primary blue accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4V_u5CuUQVVg60iT5nKOvKmIPXQV3Eyn9CpO07AdGf9ojEHc8hUJk2NfmfFO1KxbXZVxY5RE4ZxJbPLHt3dOJxdoMb7HUsPjSgP2amT0Z_zSZhnmATmLTwddstzbsKuXMLqg1mZIcZwL-bUR0zSc_WNaIN71xqo0cwsaJUdjmE9nNEWGtCf4zSE2LvJwczPDgpSl1aAynwXeU0yXAe17_EYQ2KBy9CzKKiD6aF2k2L47Xrrinje5RgXcLyLc4f5x-_gn8pC_m9SM"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-sm mb-1 uppercase">Spesialis Neurologi</p>
-<h5 class="font-headline-sm text-lg text-primary">Dr. Maya Lestari</h5>
-</div>
-</div>
-<!-- Doctor 3 -->
-<div class="clay-card shimmer-card group">
-<div class="aspect-[4/5] overflow-hidden">
-<img alt="Dr. Hendra" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A portrait of a male surgeon standing against a soft-focus laboratory background. He wears medical scrubs and a white coat, radiating expertise and calm. The scene is illuminated with cool, clinical studio lighting that highlights the soft textures of his attire and the glass partitions behind him." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8OwJKwzyyEKE0BWr4pLsUkcH93wR4zxh--yi_4ctQLap205d7BexQqTuxYVCuelspby4-epdwc7IqQSeGvYMUddApYaUfFszRFpL5TPYCrBXVITAutnHhAt1p9m4jnM8tggYbyGh0K1Xilx1mZEO2F4F7zW7mEE2BvlcI_8QyyUnlZym6Tl1vYzIGzSetOzqvTrgRYmNa9-qWTqGyDZi5Pb_fswetETn0bZlhpWQNJcDnw6breliOexxNf0AbINSZrMDH9nPhxeg"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-sm mb-1 uppercase">Bedah Umum</p>
-<h5 class="font-headline-sm text-lg text-primary">Dr. Hendra Wijaya</h5>
-</div>
-</div>
-<!-- Doctor 4 -->
-<div class="clay-card shimmer-card group">
-<div class="aspect-[4/5] overflow-hidden">
-<img alt="Dr. Sarah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A professional female doctor with glasses and a stethoscope, smiling in a brightly lit corridor of a modern clinic. The background is softly blurred with hints of high-tech medical equipment and glass railings. The image follows a light-mode color palette with gentle blue atmospheric highlights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxJaFmCkK66BSqwd4nefl6m8l9EEBIhFqPFyWsRwFI47iUnMO3PTLAovSy0DeGwjgJm9DOlbhlljeDEfJ_MJdzsJq2m07QWjMkLijaescdom79A0Wk0UBO7VGHnaR4Fa8wWTyRxDQtozFWBPctA0oDKrCQZcQkSDsA-zV4XJmxo-dMhJl8GrvwkPatPfCuJv9JY3fe5XmEIGkHoDg28fzL_xC8f4O1Q5Wk0NWr-Tbd97roQgbrAwUWy_Atvk5MnYn78fOQTkyCd94"/>
-</div>
-<div class="p-6">
-<p class="text-secondary font-bold text-sm mb-1 uppercase">Pediatrik</p>
-<h5 class="font-headline-sm text-lg text-primary">Dr. Sarah Amalia</h5>
-</div>
-</div>
-</div>
+  <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+    <div class="max-w-2xl">
+      <h2 class="font-headline-md text-headline-md text-primary mb-4">Tim Dokter Ahli</h2>
+      <p class="font-body-md text-on-surface-variant">Dokter-dokter kami adalah pionir di bidangnya dengan pengalaman bertahun-tahun dalam pelayanan klinis futuristik.</p>
+    </div>
+    <button class="flex items-center gap-2 text-primary font-bold px-6 py-3 bg-primary/5 rounded-full hover:bg-primary/10 transition-all">
+      Lihat Semua <span class="material-symbols-outlined" data-icon="north_east">north_east</span>
+    </button>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="clay-card shimmer-card group">
+      <div class="aspect-[4/5] overflow-hidden">
+        <img alt="Dr. Aris" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoatYnjd-AxJXgXJOGl2pyajd-Agq9s9DkmlOH5A0Ut5-cinTg4TwwqK-KjK5gGzNx8b-kPQR8tU2FxJCJ_R0InVoOu3WLwYo2gGLH0WYFf02oi7Ah4KZMTx88f5ctlbpNL0e9efNXKCysOjCmKp8ns8_eWymuLodLFsZ8fSa2cb8H0xc5f1aev8GwuZbPiWAc_ES4eWhImSQt9KM8ExCvBEmnjgbdBM_5hTr-GipOeyJtSjVBd7ZPgs2JjvIUX5j6mP5NTuZgtjk"/>
+      </div>
+      <div class="p-6">
+        <p class="text-secondary font-bold text-sm mb-1 uppercase">Kardiologis Utama</p>
+        <h5 class="font-headline-sm text-lg text-primary">Dr. Aris Sudarsono</h5>
+      </div>
+    </div>
+    <div class="clay-card shimmer-card group">
+      <div class="aspect-[4/5] overflow-hidden">
+        <img alt="Dr. Maya" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4V_u5CuUQVVg60iT5nKOvKmIPXQV3Eyn9CpO07AdGf9ojEHc8hUJk2NfmfFO1KxbXZVxY5RE4ZxJbPLHt3dOJxdoMb7HUsPjSgP2amT0Z_zSZhnmATmLTwddstzbsKuXMLqg1mZIcZwL-bUR0zSc_WNaIN71xqo0cwsaJUdjmE9nNEWGtCf4zSE2LvJwczPDgpSl1aAynwXeU0yXAe17_EYQ2KBy9CzKKiD6aF2k2L47Xrrinje5RgXcLyLc4f5x-_gn8pC_m9SM"/>
+      </div>
+      <div class="p-6">
+        <p class="text-secondary font-bold text-sm mb-1 uppercase">Spesialis Neurologi</p>
+        <h5 class="font-headline-sm text-lg text-primary">Dr. Maya Lestari</h5>
+      </div>
+    </div>
+    <div class="clay-card shimmer-card group">
+      <div class="aspect-[4/5] overflow-hidden">
+        <img alt="Dr. Hendra" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8OwJKwzyyEKE0BWr4pLsUkcH93wR4zxh--yi_4ctQLap205d7BexQqTuxYVCuelspby4-epdwc7IqQSeGvYMUddApYaUfFszRFpL5TPYCrBXVITAutnHhAt1p9m4jnM8tggYbyGh0K1Xilx1mZEO2F4F7zW7mEE2BvlcI_8QyyUnlZym6Tl1vYzIGzSetOzqvTrgRYmNa9-qWTqGyDZi5Pb_fswetETn0bZlhpWQNJcDnw6breliOexxNf0AbINSZrMDH9nPhxeg"/>
+      </div>
+      <div class="p-6">
+        <p class="text-secondary font-bold text-sm mb-1 uppercase">Bedah Umum</p>
+        <h5 class="font-headline-sm text-lg text-primary">Dr. Hendra Wijaya</h5>
+      </div>
+    </div>
+    <div class="clay-card shimmer-card group">
+      <div class="aspect-[4/5] overflow-hidden">
+        <img alt="Dr. Sarah" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxJaFmCkK66BSqwd4nefl6m8l9EEBIhFqPFyWsRwFI47iUnMO3PTLAovSy0DeGwjgJm9DOlbhlljeDEfJ_MJdzsJq2m07QWjMkLijaescdom79A0Wk0UBO7VGHnaR4Fa8wWTyRxDQtozFWBPctA0oDKrCQZcQkSDsA-zV4XJmxo-dMhJl8GrvwkPatPfCuJv9JY3fe5XmEIGkHoDg28fzL_xC8f4O1Q5Wk0NWr-Tbd97roQgbrAwUWy_Atvk5MnYn78fOQTkyCd94"/>
+      </div>
+      <div class="p-6">
+        <p class="text-secondary font-bold text-sm mb-1 uppercase">Pediatrik</p>
+        <h5 class="font-headline-sm text-lg text-primary">Dr. Sarah Amalia</h5>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Testimonials Slider -->
 <section class="py-section-gap px-container-padding from-background to-surface-container-low bg-white/30 backdrop-blur-sm">
-<div class="max-w-max-width mx-auto">
-<div class="text-center mb-16">
-<span class="bg-primary/10 text-primary px-4 py-1 rounded-full font-bold text-sm">TESTIMONI</span>
-<h2 class="font-headline-md text-headline-md text-primary mt-4">Apa Kata Pasien Kami?</h2>
-</div>
-<div class="flex gap-8 overflow-x-auto pb-12 snap-x hide-scrollbar scroll-smooth" id="testimonial-slider">
-<!-- Testimonial 1 -->
-<div class="min-w-[320px] md:min-w-[450px] clay-card p-10 snap-center bg-white/60 backdrop-blur-md">
-<div class="flex gap-1 text-secondary mb-6">
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-</div>
-<p class="italic text-body-lg text-on-surface mb-8">"Layanan di AetherClinic sungguh luar biasa. Teknologi diagnosisnya sangat cepat dan para dokternya menjelaskan kondisi saya dengan sangat detail dan menenangkan."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed overflow-hidden">
-<img alt="Budi" data-alt="Portrait of a male patient smiling, lit with warm natural light in a professional studio setting. The background is a soft, solid light grey." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQGD_2ztmgf0-xVNno_A3FU_1ziLWRm_3DaAbszF9pzZ4dUIPMw98Wy5-AcWC24Bhh3XUrwg6LefDFffYTXZqYBr6jKVZ7F8fbeAXJae5MeKXw6a81bfadAs9YMgXfKRVClZ7qVERTrHe3H7tAP3Tm5qMnLeXZA72hekYPQUqP7qLHoVQjF3PlErmDuPaK9McQSu5eZfFH2RIAJEbC2zBzWuj96GK8sFihN5SKAtnhsaatm2pF48zIiPcOUpoDfUU0Uy1p1iykWoI"/>
-</div>
-<div>
-<p class="font-bold text-primary">Budi Santoso</p>
-<p class="text-sm text-on-surface-variant">Pasien Kardiologi</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 2 -->
-<div class="min-w-[320px] md:min-w-[450px] clay-card p-10 snap-center bg-white/60 backdrop-blur-md">
-<div class="flex gap-1 text-secondary mb-6">
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-</div>
-<p class="italic text-body-lg text-on-surface mb-8">"Proses pendaftaran melalui aplikasi sangat mudah. Tidak ada antrian panjang dan fasilitasnya terasa seperti hotel bintang lima namun tetap sangat klinis."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed overflow-hidden">
-<img alt="Dewi" data-alt="Portrait of a female patient with a kind smile, softly lit to emphasize a sense of recovery and health. High-key light-mode photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgpW2D1eB_36M3AacUlxl25RDEfIq12QoBg7SW7mZI8FJTqsXkkQEkiCkuprNxJJRkPpPs3Xqe1hV0uZ0b5KAzh_TupqRnAQ0wBqVHfZdreq1SGvZNKcLS1Yn09wLavlCIsnpVReVBCEPmSl5BV6AOplJVTVSwr9Zdi7ZabBkkqOy050OBFdkFUJJF2oBY9rOQ1dGMtevyX3BT2ky2QsHJV1N0gcq6_ABxeNbrt9DQ_4QmOar2t-QQ7nbMExkpgetevEBBR8PRTYY"/>
-</div>
-<div>
-<p class="font-bold text-primary">Dewi Putri</p>
-<p class="text-sm text-on-surface-variant">Pasien General Checkup</p>
-</div>
-</div>
-</div>
-<!-- Testimonial 3 -->
-<div class="min-w-[320px] md:min-w-[450px] clay-card p-10 snap-center bg-white/60 backdrop-blur-md">
-<div class="flex gap-1 text-secondary mb-6">
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-<span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
-</div>
-<p class="italic text-body-lg text-on-surface mb-8">"Dokter Sarah sangat sabar menangani anak saya yang takut dokter. Fasilitas bermainnya sangat menyenangkan bagi anak-anak."</p>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-primary-fixed overflow-hidden">
-<img alt="Iwan" data-alt="Portrait of a young father with a warm expression, high-quality professional photography with a focus on empathy and clinical cleanliness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCABE9pvbqfyfdI6KHj6J1260A7nXNb41nQW7QzZSCz-T8KjuwZ8X7wFuwpBNaRqwK41HSxVTPx6jXUFdPdWboBqhF86tqXchU95E4mbbUJdY0x6tfXqV3A-a64O_KBOBTssTQN1dd2JVioYWJJVrcJL1g4Hot0sbShAuj8uy-IGIiZaYq8cPBL1zDYRcPoH7Kx2l_r7b7ZOpbZQWoo31XVJuDZevdqkLsJAAAb8yEl-Nxo-TDdJNAnfTCLLvUqpHaxQJQdzbDWDz4"/>
-</div>
-<div>
-<p class="font-bold text-primary">Iwan Pratama</p>
-<p class="text-sm text-on-surface-variant">Orang Tua Pasien</p>
-</div>
-</div>
-</div>
-</div>
-<div class="flex justify-center gap-4 mt-8">
-<button class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-primary-container hover:text-white transition-all" onclick="document.getElementById('testimonial-slider').scrollBy({left: -400, behavior: 'smooth'})">
-<span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
-</button>
-<button class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-primary-container hover:text-white transition-all" onclick="document.getElementById('testimonial-slider').scrollBy({left: 400, behavior: 'smooth'})">
-<span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
-</button>
-</div>
-</div>
+  <div class="max-w-max-width mx-auto">
+    <div class="text-center mb-16">
+      <span class="bg-primary/10 text-primary px-4 py-1 rounded-full font-bold text-sm">TESTIMONI</span>
+      <h2 class="font-headline-md text-headline-md text-primary mt-4">Apa Kata Pasien Kami?</h2>
+    </div>
+    <div class="flex gap-8 overflow-x-auto pb-12 snap-x hide-scrollbar scroll-smooth" id="testimonial-slider">
+      <div class="min-w-[320px] md:min-w-[450px] clay-card p-10 snap-center bg-white/60 backdrop-blur-md">
+        <div class="flex gap-1 text-secondary mb-6">
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+        </div>
+        <p class="italic text-body-lg text-on-surface mb-8">"Layanan di AetherClinic sungguh luar biasa. Teknologi diagnosisnya sangat cepat dan para dokternya menjelaskan kondisi saya dengan sangat detail dan menenangkan."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary-fixed overflow-hidden">
+            <img alt="Budi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQGD_2ztmgf0-xVNno_A3FU_1ziLWRm_3DaAbszF9pzZ4dUIPMw98Wy5-AcWC24Bhh3XUrwg6LefDFffYTXZqYBr6jKVZ7F8fbeAXJae5MeKXw6a81bfadAs9YMgXfKRVClZ7qVERTrHe3H7tAP3Tm5qMnLeXZA72hekYPQUqP7qLHoVQjF3PlErmDuPaK9McQSu5eZfFH2RIAJEbC2zBzWuj96GK8sFihN5SKAtnhsaatm2pF48zIiPcOUpoDfUU0Uy1p1iykWoI"/>
+          </div>
+          <div>
+            <p class="font-bold text-primary">Budi Santoso</p>
+            <p class="text-sm text-on-surface-variant">Pasien Kardiologi</p>
+          </div>
+        </div>
+      </div>
+      <div class="min-w-[320px] md:min-w-[450px] clay-card p-10 snap-center bg-white/60 backdrop-blur-md">
+        <div class="flex gap-1 text-secondary mb-6">
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+        </div>
+        <p class="italic text-body-lg text-on-surface mb-8">"Proses pendaftaran melalui aplikasi sangat mudah. Tidak ada antrian panjang dan fasilitasnya terasa seperti hotel bintang lima namun tetap sangat klinis."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary-fixed overflow-hidden">
+            <img alt="Dewi" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgpW2D1eB_36M3AacUlxl25RDEfIq12QoBg7SW7mZI8FJTqsXkkQEkiCkuprNxJJRkPpPs3Xqe1hV0uZ0b5KAzh_TupqRnAQ0wBqVHfZdreq1SGvZNKcLS1Yn09wLavlCIsnpVReVBCEPmSl5BV6AOplJVTVSwr9Zdi7ZabBkkqOy050OBFdkFUJJF2oBY9rOQ1dGMtevyX3BT2ky2QsHJV1N0gcq6_ABxeNbrt9DQ_4QmOar2t-QQ7nbMExkpgetevEBBR8PRTYY"/>
+          </div>
+          <div>
+            <p class="font-bold text-primary">Dewi Putri</p>
+            <p class="text-sm text-on-surface-variant">Pasien General Checkup</p>
+          </div>
+        </div>
+      </div>
+      <div class="min-w-[320px] md:min-w-[450px] clay-card p-10 snap-center bg-white/60 backdrop-blur-md">
+        <div class="flex gap-1 text-secondary mb-6">
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+          <span class="material-symbols-outlined" data-icon="star" data-weight="fill">star</span>
+        </div>
+        <p class="italic text-body-lg text-on-surface mb-8">"Dokter Sarah sangat sabar menangani anak saya yang takut dokter. Fasilitas bermainnya sangat menyenangkan bagi anak-anak."</p>
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-full bg-primary-fixed overflow-hidden">
+            <img alt="Iwan" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCABE9pvbqfyfdI6KHj6J1260A7nXNb41nQW7QzZSCz-T8KjuwZ8X7wFuwpBNaRqwK41HSxVTPx6jXUFdPdWboBqhF86tqXchU95E4mbbUJdY0x6tfXqV3A-a64O_KBOBTssTQN1dd2JVioYWJJVrcJL1g4Hot0sbShAuj8uy-IGIiZaYq8cPBL1zDYRcPoH7Kx2l_r7b7ZOpbZQWoo31XVJuDZevdqkLsJAAAb8yEl-Nxo-TDdJNAnfTCLLvUqpHaxQJQdzbDWDz4"/>
+          </div>
+          <div>
+            <p class="font-bold text-primary">Iwan Pratama</p>
+            <p class="text-sm text-on-surface-variant">Orang Tua Pasien</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-center gap-4 mt-8">
+      <button class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-primary-container hover:text-white transition-all" onclick="document.getElementById('testimonial-slider').scrollBy({left: -400, behavior: 'smooth'})">
+        <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+      </button>
+      <button class="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-primary-container hover:text-white transition-all" onclick="document.getElementById('testimonial-slider').scrollBy({left: 400, behavior: 'smooth'})">
+        <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+      </button>
+    </div>
+  </div>
 </section>
+
 <!-- Footer -->
 <footer class="bg-surface-container-low w-full rounded-t-[40px] mt-section-gap border-t border-outline-variant/30">
-<div class="max-w-max-width mx-auto px-container-padding py-16 grid grid-cols-1 md:grid-cols-12 gap-gutter">
-<div class="md:col-span-4">
-<div class="text-headline-sm font-headline-sm tracking-tight text-on-surface flex items-center gap-2 mb-6">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">fluid_med</span>
-            AetherClinic
-        </div>
-<p class="text-on-surface-variant text-body-md leading-relaxed">Pusat kesehatan futuristik yang mengintegrasikan kecerdasan buatan dengan empati manusiawi untuk hasil medis terbaik.</p>
-<div class="flex gap-3 mt-8">
-<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-[20px]">globe</span></a>
-<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
-<a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-[20px]">call</span></a>
-</div>
-</div>
-<div class="md:col-span-2 md:col-start-6">
-<h5 class="font-bold text-on-surface mb-5 text-label-md uppercase tracking-wider">Navigasi</h5>
-<ul class="space-y-3">
-<li><a href="index.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Home</a></li>
-<li><a href="services.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Services</a></li>
-<li><a href="specialists.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Specialists</a></li>
-<li><a href="tentangkami.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">About Us</a></li>
-<li><a href="technologies.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Technologies</a></li>
-</ul>
-</div>
-<div class="md:col-span-2">
-<h5 class="font-bold text-on-surface mb-5 text-label-md uppercase tracking-wider">Layanan</h5>
-<ul class="space-y-3">
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Kardiologi</a></li>
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Neurologi</a></li>
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">General Checkup</a></li>
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">UGD 24 Jam</a></li>
-</ul>
-</div>
-<div class="md:col-span-2">
-<h5 class="font-bold text-on-surface mb-5 text-label-md uppercase tracking-wider">Dukungan</h5>
-<ul class="space-y-3">
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Kontak</a></li>
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">FAQ</a></li>
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Privacy Policy</a></li>
-<li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Terms of Service</a></li>
-</ul>
-</div>
-</div>
-<div class="max-w-max-width mx-auto px-container-padding py-6 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-on-surface-variant/60 text-label-md">Â© 2024 AetherClinic. Precision meets Compassion.</p>
-<div class="flex gap-6">
-<a class="text-on-surface-variant/60 hover:text-primary transition-colors duration-300 text-label-sm" href="#">Privacy Policy</a>
-<a class="text-on-surface-variant/60 hover:text-primary transition-colors duration-300 text-label-sm" href="#">Terms of Service</a>
-</div>
-</div>
+  <div class="max-w-max-width mx-auto px-container-padding py-16 grid grid-cols-1 md:grid-cols-12 gap-gutter">
+    <div class="md:col-span-4">
+      <div class="text-headline-sm font-headline-sm tracking-tight text-on-surface flex items-center gap-2 mb-6">
+        <span class="material-symbols-outlined text-primary" style="font-variation-settings:'FILL' 1">fluid_med</span>
+        AetherClinic
+      </div>
+      <p class="text-on-surface-variant text-body-md leading-relaxed">Pusat kesehatan futuristik yang mengintegrasikan kecerdasan buatan dengan empati manusiawi untuk hasil medis terbaik.</p>
+      <div class="flex gap-3 mt-8">
+        <a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-[20px]">globe</span></a>
+        <a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
+        <a class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white hover:scale-110 transition-all duration-300" href="#"><span class="material-symbols-outlined text-[20px]">call</span></a>
+      </div>
+    </div>
+    <div class="md:col-span-2 md:col-start-6">
+      <h5 class="font-bold text-on-surface mb-5 text-label-md uppercase tracking-wider">Navigasi</h5>
+      <ul class="space-y-3">
+        <li><a href="index.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Home</a></li>
+        <li><a href="services.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Services</a></li>
+        <li><a href="specialists.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Specialists</a></li>
+        <li><a href="tentangkami.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">About Us</a></li>
+        <li><a href="technologies.html" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Technologies</a></li>
+      </ul>
+    </div>
+    <div class="md:col-span-2">
+      <h5 class="font-bold text-on-surface mb-5 text-label-md uppercase tracking-wider">Layanan</h5>
+      <ul class="space-y-3">
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Kardiologi</a></li>
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Neurologi</a></li>
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">General Checkup</a></li>
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">UGD 24 Jam</a></li>
+      </ul>
+    </div>
+    <div class="md:col-span-2">
+      <h5 class="font-bold text-on-surface mb-5 text-label-md uppercase tracking-wider">Dukungan</h5>
+      <ul class="space-y-3">
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Kontak</a></li>
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">FAQ</a></li>
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Privacy Policy</a></li>
+        <li><a href="#" class="text-on-surface-variant hover:text-primary hover:translate-x-1 transition-all duration-300 inline-block font-body-md">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="max-w-max-width mx-auto px-container-padding py-6 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-on-surface-variant/60 text-label-md">© 2024 AetherClinic. Precision meets Compassion.</p>
+    <div class="flex gap-6">
+      <a class="text-on-surface-variant/60 hover:text-primary transition-colors duration-300 text-label-sm" href="#">Privacy Policy</a>
+      <a class="text-on-surface-variant/60 hover:text-primary transition-colors duration-300 text-label-sm" href="#">Terms of Service</a>
+    </div>
+  </div>
 </footer>
+
 <!-- Premium Animations -->
 <script>
-    (function() {
-        'use strict';
+  (function() {
+    'use strict';
 
-        // === 1. SCROLL PROGRESS BAR ===
-        const progressBar = document.getElementById('scroll-progress');
-        if (progressBar) {
-            window.addEventListener('scroll', function() {
-                const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
-                const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-                progressBar.style.width = (winScroll / height) * 100 + '%';
-            });
-        }
+    // === 1. SCROLL PROGRESS BAR ===
+    const progressBar = document.getElementById('scroll-progress');
+    if (progressBar) {
+      window.addEventListener('scroll', function() {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        progressBar.style.width = (winScroll / height) * 100 + '%';
+      });
+    }
 
-        // === 2. STAGGERED SCROLL REVEAL ===
-        const revealElements = document.querySelectorAll('.clay-card, .reveal');
-        if (revealElements.length) {
-            const revealObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        setTimeout(function() {
-                            entry.target.classList.add('reveal-visible');
-                        }, Array.from(revealElements).indexOf(entry.target) * 80);
-                        revealObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-            revealElements.forEach(function(el) {
-                if (!el.classList.contains('no-reveal')) {
-                    el.classList.add('reveal');
-                    revealObserver.observe(el);
-                }
-            });
-        }
-
-        // === 3. COUNTER ANIMATION ===
-        const counters = document.querySelectorAll('.counter-value');
-        if (counters.length) {
-            const counterObserver = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        const el = entry.target;
-                        const target = parseInt(el.getAttribute('data-target'));
-                        const duration = 1500;
-                        const start = performance.now();
-                        function update(now) {
-                            const elapsed = now - start;
-                            const progress = Math.min(elapsed / duration, 1);
-                            const easeOut = 1 - Math.pow(1 - progress, 3);
-                            el.textContent = Math.floor(easeOut * target);
-                            if (progress < 1) requestAnimationFrame(update);
-                        }
-                        requestAnimationFrame(update);
-                        counterObserver.unobserve(el);
-                    }
-                });
-            }, { threshold: 0.5 });
-            counters.forEach(function(c) { counterObserver.observe(c); });
-        }
-
-        // === 4. NAVBAR SCROLL EFFECT ===
-        const nav = document.getElementById('main-nav');
-        if (nav) {
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 60) {
-                    nav.classList.add('nav-scrolled');
-                } else {
-                    nav.classList.remove('nav-scrolled');
-                }
-            }, { passive: true });
-        }
-
-        // === 5. RIPPLE BUTTON EFFECT ===
-        document.querySelectorAll('.ripple-btn').forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-                const rect = this.getBoundingClientRect();
-                const ripple = document.createElement('span');
-                ripple.className = 'ripple';
-                const size = Math.max(rect.width, rect.height);
-                ripple.style.width = ripple.style.height = size + 'px';
-                ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
-                ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
-                this.appendChild(ripple);
-                setTimeout(function() { ripple.remove(); }, 600);
-            });
+    // === 2. STAGGERED SCROLL REVEAL ===
+    const revealElements = document.querySelectorAll('.clay-card, .reveal');
+    if (revealElements.length) {
+      const revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            setTimeout(function() {
+              entry.target.classList.add('reveal-visible');
+            }, Array.from(revealElements).indexOf(entry.target) * 80);
+            revealObserver.unobserve(entry.target);
+          }
         });
-
-        // === 6. FLOATING PARTICLES ===
-        const particlesContainer = document.getElementById('hero-particles');
-        if (particlesContainer) {
-            for (var i = 0; i < 20; i++) {
-                var p = document.createElement('div');
-                p.className = 'particle';
-                p.style.left = Math.random() * 100 + '%';
-                p.style.width = p.style.height = (Math.random() * 4 + 2) + 'px';
-                p.style.animationDuration = (Math.random() * 8 + 6) + 's';
-                p.style.animationDelay = (Math.random() * 8) + 's';
-                p.style.opacity = Math.random() * 0.4 + 0.1;
-                particlesContainer.appendChild(p);
-            }
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      revealElements.forEach(function(el) {
+        if (!el.classList.contains('no-reveal')) {
+          el.classList.add('reveal');
+          revealObserver.observe(el);
         }
+      });
+    }
 
-        // === 7. SMOOTH SCROLL FOR ANCHORS ===
-        document.querySelectorAll('a[href^="#"]').forEach(function(a) {
-            var href = a.getAttribute('href');
-            if (href && href.length > 1) {
-                a.addEventListener('click', function(e) {
-                    var target = document.querySelector(href);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                });
+    // === 3. COUNTER ANIMATION ===
+    const counters = document.querySelectorAll('.counter-value');
+    if (counters.length) {
+      const counterObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const target = parseInt(el.getAttribute('data-target'));
+            const duration = 1500;
+            const start = performance.now();
+            function update(now) {
+              const elapsed = now - start;
+              const progress = Math.min(elapsed / duration, 1);
+              const easeOut = 1 - Math.pow(1 - progress, 3);
+              el.textContent = Math.floor(easeOut * target);
+              if (progress < 1) requestAnimationFrame(update);
             }
+            requestAnimationFrame(update);
+            counterObserver.unobserve(el);
+          }
         });
+      }, { threshold: 0.5 });
+      counters.forEach(function(c) { counterObserver.observe(c); });
+    }
 
-    })();
+    // === 4. NAVBAR SCROLL EFFECT ===
+    const nav = document.getElementById('main-nav');
+    if (nav) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 60) {
+          nav.classList.add('nav-scrolled');
+        } else {
+          nav.classList.remove('nav-scrolled');
+        }
+      }, { passive: true });
+    }
+
+    // === 5. RIPPLE BUTTON EFFECT ===
+    document.querySelectorAll('.ripple-btn').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        const rect = this.getBoundingClientRect();
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        const size = Math.max(rect.width, rect.height);
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        this.appendChild(ripple);
+        setTimeout(function() { ripple.remove(); }, 600);
+      });
+    });
+
+    // === 6. FLOATING PARTICLES ===
+    const particlesContainer = document.getElementById('hero-particles');
+    if (particlesContainer) {
+      for (var i = 0; i < 20; i++) {
+        var p = document.createElement('div');
+        p.className = 'particle';
+        p.style.left = Math.random() * 100 + '%';
+        p.style.width = p.style.height = (Math.random() * 4 + 2) + 'px';
+        p.style.animationDuration = (Math.random() * 8 + 6) + 's';
+        p.style.animationDelay = (Math.random() * 8) + 's';
+        p.style.opacity = Math.random() * 0.4 + 0.1;
+        particlesContainer.appendChild(p);
+      }
+    }
+
+    // === 7. SMOOTH SCROLL FOR ANCHORS ===
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      var href = a.getAttribute('href');
+      if (href && href.length > 1) {
+        a.addEventListener('click', function(e) {
+          var target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      }
+    });
+
+  })();
 </script>
-</body></html>
+</body>
+</html>
