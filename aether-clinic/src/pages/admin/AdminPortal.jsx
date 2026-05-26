@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
+import { useSupabase } from '../../context/SupabaseContext';
+import { useAuth } from '../../context/AuthContext';
 import Overview from './Overview';
 import Patients from './Patients';
 import Doctors from './Doctors';
@@ -35,12 +38,25 @@ const pageTitles = {
 
 export default function AdminPortal() {
   const { isDark, toggleTheme } = useTheme();
+  const navigate = useNavigate();
+  const supabaseCtx = useSupabase();
+  const { logout: authLogout } = useAuth();
   const [currentPage, setCurrentPage] = useState('overview');
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [showNotif, setShowNotif] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
+
+  const handleLogout = async () => {
+    try {
+      if (supabaseCtx?.signOut) await supabaseCtx.signOut();
+      if (authLogout) authLogout();
+    } catch (e) {
+      console.warn('Logout fallback:', e);
+    }
+    navigate('/login');
+  };
 
   useEffect(() => {
     const check = () => {
@@ -152,7 +168,7 @@ export default function AdminPortal() {
               <p className="text-xs text-gray-400 truncate">Admin</p>
             </div>
           </div>
-          <button className="flex items-center gap-3 px-3 py-2 w-full rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-all duration-200 mt-1 group">
+          <button onClick={handleLogout} className="flex items-center gap-3 px-3 py-2 w-full rounded-lg text-gray-400 hover:text-white hover:bg-white/5 transition-all duration-200 mt-1 group">
             <LogOut className="w-5 h-5 shrink-0 group-hover:text-red-400 transition-colors" />
             <span className={`text-sm font-medium whitespace-nowrap overflow-hidden transition-all duration-300 ${sidebarCollapsed ? 'w-0 opacity-0' : 'w-auto opacity-100'}`}>
               Sign Out

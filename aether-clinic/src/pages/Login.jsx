@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Sparkles, Eye, EyeOff, ChevronRight } from 'lucide-react';
+import { Sparkles, Eye, EyeOff, ChevronRight, ArrowLeft } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import AnimatedButton from '../components/ui/AnimatedButton';
@@ -23,6 +23,10 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-bg-dark flex items-center justify-center p-4 relative overflow-hidden">
+      <Link to="/" className="absolute top-6 left-6 flex items-center gap-2 text-text-secondary hover:text-white transition-colors z-10">
+        <ArrowLeft className="w-4 h-4" />
+        <span className="text-sm">Back to Home</span>
+      </Link>
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />

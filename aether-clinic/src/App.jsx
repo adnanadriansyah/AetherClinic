@@ -2,7 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from './context/ThemeContext';
 import { AuthProvider } from './context/AuthContext';
+import { SupabaseProvider } from './context/SupabaseContext';
 import MainLayout from './components/layout/MainLayout';
+import ToastContainer from './components/ui/Toast';
 
 import Landing from './pages/Landing';
 import Services from './pages/Services';
@@ -52,9 +54,12 @@ export default function App() {
   return (
     <BrowserRouter>
       <ThemeProvider>
-        <AuthProvider>
-          <AppRoutes />
-        </AuthProvider>
+        <SupabaseProvider>
+          <AuthProvider>
+            <AppRoutes />
+            <ToastContainer />
+          </AuthProvider>
+        </SupabaseProvider>
       </ThemeProvider>
     </BrowserRouter>
   );
