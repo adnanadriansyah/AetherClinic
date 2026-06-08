@@ -192,3 +192,41 @@ export async function getTreatmentSessions(patientId) {
   if (error) throw error;
   return data;
 }
+
+// ─── CRUD: Doctors ─────────────────────────────────────
+export async function createDoctor(doctor) {
+  if (!isSupabaseConnected()) return null;
+  const { data, error } = await supabase.from('doctors').insert([doctor]).select().single();
+  if (error) throw error;
+  return data;
+}
+
+export async function updateDoctor(id, updates) {
+  if (!isSupabaseConnected()) return null;
+  const { data, error } = await supabase.from('doctors').update(updates).eq('id', id).select().single();
+  if (error) throw error;
+  return data;
+}
+
+// ─── CRUD: Appointments ────────────────────────────────
+export async function updateAppointment(id, updates) {
+  if (!isSupabaseConnected()) return null;
+  const { data, error } = await supabase.from('appointments').update(updates).eq('id', id).select().single();
+  if (error) throw error;
+  return data;
+}
+
+// ─── CRUD: Medical Records ─────────────────────────────
+export async function createMedicalRecord(record) {
+  if (!isSupabaseConnected()) return null;
+  const { data, error } = await supabase.from('medical_records').insert([record]).select().single();
+  if (error) throw error;
+  return data;
+}
+
+export async function updateMedicalRecord(id, updates) {
+  if (!isSupabaseConnected()) return null;
+  const { data, error } = await supabase.from('medical_records').update(updates).eq('id', id).select().single();
+  if (error) throw error;
+  return data;
+}

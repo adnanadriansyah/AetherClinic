@@ -23,6 +23,13 @@ import MedicalHistory from './pages/MedicalHistory';
 import TreatmentProgress from './pages/TreatmentProgress';
 import PaymentBilling from './pages/PaymentBilling';
 import Notifications from './pages/Notifications';
+import PatientAppointments from './pages/patient/Appointments';
+import PatientDoctors from './pages/patient/Doctors';
+import PatientConsultation from './pages/patient/Consultation';
+import DoctorAppointments from './pages/doctor/Appointments';
+import DoctorPatients from './pages/doctor/Patients';
+import DoctorRecords from './pages/doctor/Records';
+import DoctorSettings from './pages/doctor/Settings';
 
 function AppRoutes() {
   return (
@@ -45,6 +52,13 @@ function AppRoutes() {
         <Route path="/treatment-progress" element={<TreatmentProgress />} />
         <Route path="/payment" element={<PaymentBilling />} />
         <Route path="/notifications" element={<Notifications />} />
+        <Route path="/dashboard/appointments" element={<PatientAppointments />} />
+        <Route path="/dashboard/doctors" element={<PatientDoctors />} />
+        <Route path="/dashboard/consultation" element={<PatientConsultation />} />
+        <Route path="/doctor/appointments" element={<DoctorAppointments />} />
+        <Route path="/doctor/patients" element={<DoctorPatients />} />
+        <Route path="/doctor/records" element={<DoctorRecords />} />
+        <Route path="/doctor/settings" element={<DoctorSettings />} />
       </Routes>
     </AnimatePresence>
   );

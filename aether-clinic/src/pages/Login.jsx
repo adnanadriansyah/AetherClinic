@@ -23,9 +23,9 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-bg-dark flex items-center justify-center p-4 relative overflow-hidden">
-      <Link to="/" className="absolute top-6 left-6 flex items-center gap-2 text-text-secondary hover:text-white transition-colors z-10">
+      <Link to="/" className="absolute top-6 left-6 flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-text-secondary hover:text-white hover:bg-white/10 transition-all z-10">
         <ArrowLeft className="w-4 h-4" />
-        <span className="text-sm">Back to Home</span>
+        <span className="text-sm font-medium">Back to Home</span>
       </Link>
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/15 rounded-full blur-3xl" />
